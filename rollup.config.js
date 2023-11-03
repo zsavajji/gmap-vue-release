@@ -11,12 +11,6 @@ export default {
   input: 'src/main.js',
   output: [
     {
-      dir: 'dist/esm',
-      format: 'es',
-      preserveModules: true,
-      preserveModulesRoot: 'src',
-    },
-    {
       file: 'dist/main.js',
       format: 'umd',
       name: 'GmapVue',
