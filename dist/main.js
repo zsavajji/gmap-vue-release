@@ -3316,16 +3316,12 @@
       },
       clearSelection() {
         if (this.selectedShape) {
-          this.selectedShape.overlay.setEditable(false);
-          this.selectedShape.overlay.setDraggable(false);
           this.selectedShape = null;
         }
       },
       setSelection(shape) {
         this.clearSelection();
         this.selectedShape = shape;
-        shape.overlay.setEditable(true);
-        shape.overlay.setDraggable(true);
       },
       /**
        * The deleteSelection method is binded into the default component slot
